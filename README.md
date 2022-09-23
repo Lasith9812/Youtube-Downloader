@@ -7,5 +7,5 @@ python3 tube.py
 </code>
 </br>or</br>
 <code>
-./tube.py
+./tube.sh
 </code>
