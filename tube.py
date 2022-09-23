@@ -1,7 +1,4 @@
-from os import lseek
 from pytube import YouTube
-
-
 
 while True:
     url = input("Input URL: ")
