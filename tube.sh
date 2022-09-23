@@ -7,5 +7,10 @@ while True:
     url = input("Input URL: ")
     yt = YouTube(url)
     print(yt.title)
-    vid = yt.streams.get_by_itag(160)
+    llls = yt.streams.filter(adaptive=True)
+    for i in range(0,int(len(llls))):
+        print(llls[i])
+    ta = int(input("Enter tag number : "))
+    vid = yt.streams.get_by_itag(ta)
     vid.download()
+    print("Download Completed")
