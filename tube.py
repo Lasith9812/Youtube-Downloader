@@ -5,9 +5,9 @@ from pytube import Playlist
 y = int(input("Download single video[1] or Playlist[2] : "))
 
 if y == 1:
-    url = input("Input URL: ")
-    yt = YouTube(url)
     while True:
+        url = input("Input URL: ")
+        yt = YouTube(url)
         print(yt.title)
         llls = yt.streams.filter(adaptive=True)
         for i in range(0,int(len(llls))):
